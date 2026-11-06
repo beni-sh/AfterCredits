@@ -1,0 +1,112 @@
+/* ---------- Grundfarben (schwarz, rot, grau) ---------- */
+body {
+    background-color: #0d0d0d;
+    color: #d0d0d0;
+}
+
+/* ---------- Header und Navigation ---------- */
+.site-header {
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #e50914;
+}
+
+.site-title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: color 0.2s;
+}
+
+a.site-title {
+    color: inherit;
+    text-decoration: none;
+}
+
+#title:hover {
+    color: #e50914;
+}
+
+#navbar a {
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+#navbar a:hover,
+#navbar a.active {
+    color: #e50914;
+}
+
+#navbar i {
+    color: #e50914;
+    margin-right: 4px;
+}
+
+/* ---------- Startseite ---------- */
+.intro-title {
+    color: #e50914;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #b5b5b5;
+}
+
+.hero-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #6c6c6c;
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.35);
+}
+
+/* ---------- Karten (Movies / Television / Stars) ---------- */
+.movie-photos {
+    position: relative;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #6c6c6c;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.movie-photos img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s;
+}
+
+.photo-2 {
+    opacity: 0;
+}
+
+.movie:hover .photo-2,
+.movie.flipped .photo-2 {
+    opacity: 1;
+}
+
+.movie:hover .movie-photos {
+    border-color: #e50914;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.45);
+}
+
+.movie-name {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
+
+.movie:hover .movie-name {
+    color: #e50914;
+}
